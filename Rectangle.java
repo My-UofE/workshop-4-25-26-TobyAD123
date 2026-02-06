@@ -19,6 +19,12 @@ public class Rectangle {
   }
 
   //second constructor
+  public Rectangle(double width, double height){
+    this(width, height, 0, 0);
+  }
+
+
+  //third constructor
   public Rectangle() {
     this.width = 1;
     this.height = 1;
@@ -40,6 +46,16 @@ public class Rectangle {
   // method: compute the area of the rectangle
   public double getPerimeter() {
     return 2 * (width + height);
+  }
+
+  public void scale(double scaleX, double scaleY){
+    width = width*scaleX;
+    height = height*scaleY;
+  }
+
+  public void scale(double scaleXY){
+    width = width*scaleXY;
+    height = height*scaleXY;
   }
   
 }

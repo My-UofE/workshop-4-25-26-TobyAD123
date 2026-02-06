@@ -23,12 +23,12 @@ public class RectangleApp {
 		myRect1.width = 16;//the object's state is changed
 		System.out.println("Width: "+myRect1.width+", Height: "+myRect1.height);
 
-		/*
+		
 		System.out.println("Creating myRect2");
 		Rectangle myRect2 = new Rectangle(20.0, 8.0);
 		System.out.println("Width: "+myRect2.width+", Height: "+myRect2.height);
 		System.out.println("Origin: "+myRect2.originX+","+myRect2.originY);
-		 */
+		
 
 
 		
@@ -37,6 +37,14 @@ public class RectangleApp {
 		System.out.println("Width: "+myRect3.width+", Height: "+myRect3.height);
 		System.out.println("Origin: "+myRect3.originX+","+myRect3.originY);
 		
+
+		myRect1.scale(0.5); // applies 0.5 scale to both x and y, changing width to 8, height to 4
+		System.out.println("Width: "+myRect1.width+", Height: "+myRect1.height);
+ 		myRect2.scale(1,3); // should change height to 24 with width unchanged
+		System.out.println("Width: "+myRect2.width+", Height: "+myRect2.height);
+ 		myRect3.scale(15,10); // should scale to width 15, height 10
+		System.out.println("Width: "+myRect3.width+", Height: "+myRect3.height);
+
 
 	}
 }
